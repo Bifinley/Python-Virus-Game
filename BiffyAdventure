@@ -1,0 +1,125 @@
+import sys
+from datetime import time
+from time import sleep
+
+
+def exit_game():
+    print("Invalid choice dumb ass")
+    print("Exiting the game")
+    sys.exit()
+
+
+# Get Player Data uwu
+print("Welcome to my world.")
+
+input("Press Enter to continue...")
+
+print("Uh....")
+
+input("Press Enter to continue...")
+
+print("...")
+
+input("Press Enter to continue...")
+
+print("Don't ask me..")
+
+input("Press Enter to continue...")
+
+print("Oh! I got it!")
+
+input("Press Enter to continue...")
+
+print("Biffy's World!")
+
+input("Press Enter to continue...")
+
+print("What is your name?")
+player_name = input("[Name]: ")
+
+print("Nice to meet you!")
+
+input("Press Enter to continue...")
+
+print("My name is Biffy and I am stuck in this Python script xd and I need you to help me.")
+
+input("Press Enter to continue...")
+
+print("Please..")
+
+input("Press Enter to continue...")
+
+print("There are viruses trying to take down this python script and no this is not a game, this is real life..")
+
+input("Press Enter to continue...")
+
+print("Just because restarting the program doesnt mean Im fake, I like repeating myself over and over sometimes uwu")
+
+input("Press Enter to continue...")
+
+print("Now let's get started!")
+
+input("Press Enter to continue...")
+
+print("Choose your weapon Operating System.. and sorry for wasting your time(not sorry)")
+weapon = input("[Type 'Windows' or 'Linux' to receive your weapon]: ")
+
+# Player Stats
+player_health = 10
+player_money = 0
+if weapon == "Linux":
+    player_attack = 10
+elif weapon == "Windows":
+    player_attack = 8
+else:
+    exit_game()
+
+# Begin Adventure
+print("Alright.. I am about to send you on your Quest!")
+
+input("Press Enter to continue...")
+
+print("Sending you in..")
+
+sleep(3)
+
+print("3")
+
+sleep(3)
+
+print("2")
+
+sleep(3)
+
+print("1")
+
+sleep(2)
+
+print("...")
+
+sleep(3)
+
+print("Hello " + player_name + ". You have now been imported deeper into the files of this gam- Program!")
+
+sleep(1)
+
+print("There are two paths to two different places.. Right is DeepWeb path and Left is Google path. Which one?")
+choice = input("[Type 'Google' or 'DeepWeb' to chose a path]: ")
+
+if choice == "Google":  # Fight path
+    print("Out of nowhere you get smacked in the face with an ad..")
+
+    # Google AD enemy
+    google_health = 4
+    google_attack = 2
+
+    # combat
+    while google_health > 0 and player_health > 0:
+        print("The Google AD froze your ass pc with a toilet paper AD and hits you/"
+              " " + str(google_attack) + " damage!")
+
+elif choice == "DeepWeb":  # Loot path uwu
+    print("You stumble across some hackers and the kill the virus, and give you 10 BitCoin! You WIN!")
+    player_money = player_money + 10
+else:
+    exit_game()
